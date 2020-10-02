@@ -1,0 +1,121 @@
+#body {
+    background-color: #000;
+}
+
+#body,html {
+    height:100%;
+}
+
+.jumbotrom {
+    width: 100%;
+    height: 100px;
+    background-color: #993333;
+    color:#EBEBEB;
+}
+
+h1 {
+    font-family: Roboto Mono;
+    font-size: 20px;
+    color:#EBEBEB;
+    padding-top: 15px;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+
+.col-sm-12{
+    width: 100%;
+    height: 40px;
+    background-color: #993333;
+    margin: 19px 0px 0px 0px;
+    padding-bottom: 40px;
+    cursor: pointer;
+    position:absolute;
+    bottom:0;
+}
+
+p {
+    font-family: Roboto Mono;
+    font-size: 14px;
+    color:#EBEBEB;
+}
+
+#buttonDelete {
+    top: 92%;
+    width: 42px;
+    cursor: pointer;
+    background-color: #993333;
+    border-color:  #993333;
+    position: relative;
+    left: 45px;
+}
+
+#addSerie {
+    background-color: #339966;
+    border-color: #339966;
+    position: relative;
+    left: 10px;
+}
+
+.footer {
+    color:#EBEBEB;
+    font-size: 14px;
+}
+
+a.footer:link {
+    text-decoration: none;
+}
+
+a.footer:hover {
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold; /* negrito no texto */
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+.card:hover {
+    background: #404040;
+    -webkit-transition: 0.8s ease-out;
+    -moz-transition: 0.8s ease-out;
+    -o-transition: 0.8s ease-out;
+    transition: 0.8s ease-out;
+}
+
+#content {
+    min-height:63%;
+    position:relative;
+    width: 900px;
+    left: 48px;
+}
+
+img {
+    cursor: pointer;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ li {
+     display: inline;
+     float: left;
+     margin-left: 129px;
+     cursor: pointer;
+     font-family: Roboto Mono;
+     font-size: 18px;
+     color:#EBEBEB;
+     padding-top: 30px;
+ }
+
+ h5 {
+    text-align: center;
+ }
+
+.pages {
+    margin: 20px 0px 0px 5px;
+    color: #993333;
+}
