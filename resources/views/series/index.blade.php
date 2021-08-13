@@ -9,7 +9,6 @@
 <a href="{{route('serie.create')}}" type="button" class="btn btn-success" id="addSerie">Adicionar</a>
 </div>
 <div class="container pt-3" id="content">
-
     <div class="row">
         @foreach($series as $serie)
         <div class="card ml-4" >

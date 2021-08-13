@@ -57,7 +57,7 @@ class SeriesController extends Controller {
     {
         session()->put($key,$value);
 
-        return view('series.notificationCheck');
+        return view('notification');
     }
 
     public function destroy(Request $request)
