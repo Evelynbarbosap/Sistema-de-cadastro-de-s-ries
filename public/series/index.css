@@ -8,7 +8,7 @@
 
 .jumbotrom {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: #993333;
     color:#EBEBEB;
 }
@@ -27,7 +27,7 @@ h1 {
     width: 100%;
     height: 40px;
     background-color: #993333;
-    margin: 19px 0px 0px 0px;
+    margin: -51px 0px 0px 0px;
     padding-bottom: 40px;
     cursor: pointer;
     position:absolute;
@@ -40,21 +40,15 @@ p {
     color:#EBEBEB;
 }
 
-#buttonDelete {
-    top: 92%;
-    width: 42px;
-    cursor: pointer;
-    background-color: #993333;
-    border-color:  #993333;
-    position: relative;
-    left: 45px;
+#formdelete {
+   margin-right: -5px;
 }
 
 #addSerie {
     background-color: #339966;
     border-color: #339966;
     position: relative;
-    left: 10px;
+    left: 165px;
 }
 
 .footer {
@@ -86,8 +80,8 @@ a.footer:hover {
 #content {
     min-height:63%;
     position:relative;
-    width: 900px;
-    left: 48px;
+    width: 850px;
+    left: 35px;
 }
 
 img {
@@ -116,6 +110,13 @@ img {
  }
 
 .pages {
-    margin: 20px 0px 0px 5px;
+    margin: 12px 0px 0px 310px;
     color: #993333;
+    cursor: pointer;
+    position: absolute;
+}
+
+#buttonDelete {
+    margin-top: -66px;
+    margin-left: 50px;
 }

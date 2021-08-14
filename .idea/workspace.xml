@@ -20,11 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e30eeec-d47c-49e9-add7-ac90f56aa1db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/series/index2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_28_211742_create_series.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_28_211742_create_series.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SeriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SeriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Serie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Serie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_28_211742_create_series.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_08_14_023548_create_assessments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_023548_create_assessments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/series/create.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/series/create.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/series/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/series/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/series/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/series/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/series/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/series/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/series/index2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/series/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +203,7 @@
       <workItem from="1601381886082" duration="28169000" />
       <workItem from="1601589009393" duration="7592000" />
       <workItem from="1628828038970" duration="443000" />
-      <workItem from="1628905373556" duration="3979000" />
+      <workItem from="1628905373556" duration="25328000" />
     </task>
     <servers />
   </component>

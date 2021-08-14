@@ -15,3 +15,11 @@ label {
 #image {
     padding: .365rem .65rem;
 }
+#Title {
+    width: 420px;
+}
+
+#title-register, .row {
+    font-family: Arial;
+}
+

@@ -14,17 +14,9 @@
 </head>
 <body id="body">
 @include('notification')
-    <div class="jumbotrom text-center">
-        <h1>@yield('cabecalho')</h1>
+    <div class="jumbotrom text-center" >
+        <h1 style="font-family: Arial">@yield('cabecalho')</h1>
     </div>
-    @yield('conteudo')
-    <div class="col-sm-12 pt-3 text-center">
-        <p>
-            Desenvolvido por
-            <a class="footer" href="https://www.linkedin.com/in/evelyn-barbosa-63310a157/" target="_blank">Evelyn Barbosa.</a>
-            <a class="footer" href="https://www.linkedin.com/in/evelyn-barbosa-63310a157/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a class="footer" href="https://github.com/Evelynbarbosap" target="_blank"><i class="fab fa-github"></i></a>
-        </p>
-    </div>
+@yield('conteudo')
 </body>
 </html>
