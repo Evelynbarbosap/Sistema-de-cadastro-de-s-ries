@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/serie', 'SeriesController@index')->name('series');
+Route::get('/series/list', 'SeriesController@index')->name('series');
 Route::get('/serie/create', 'SeriesController@create')->name('serie.create');
 Route::post('/serie/create', 'SeriesController@store');
 Route::delete('/serie/delete/{id}', 'SeriesController@destroy')->name('serie.delete');

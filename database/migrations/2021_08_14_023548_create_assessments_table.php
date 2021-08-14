@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSeries extends Migration
+class CreateAssessmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateSeries extends Migration
      */
     public function up()
     {
-        Schema::create('series', function (Blueprint $table) {
-            $table->id();
-            $table->string('title')->nullable();
-            $table->foreignId('assessment_id')->constrained('assessments');
+        Schema::create('assessments', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('assessment')->nullable();
 
             $table->timestamps();
         });
@@ -29,6 +28,6 @@ class CreateSeries extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('series');
+        Schema::dropIfExists('assessments');
     }
 }
