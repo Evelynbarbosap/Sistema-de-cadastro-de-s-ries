@@ -6,7 +6,7 @@
 ##
 
 - 💻 A ideia do projeto é uma aplicação de crud simples para cadastrar series/filmes ja assistidos e exibir um dashboard
- com gráfico controlando as séries de melhor e pior reputação. O intuiraticar relacionamentos, sql, bootstrap.
+ com gráfico controlando as séries de melhor e pior reputação. O intuito é praticar relacionamentos, sql, bootstrap.
 - 📌 Não está pronto, está em andamento.
 
 <div>
