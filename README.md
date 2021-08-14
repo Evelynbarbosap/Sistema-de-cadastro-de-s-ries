@@ -10,5 +10,5 @@
 - 📌 Não está pronto, está em andamento.
 
 <div>
- <img align="center" alt="Evy-anime" height="300" width="500" src="https://cdn.discordapp.com/attachments/786276901278056458/876037563222204416/unknown.png">
+ <img align="center" alt="Evy-anime" height="300" width="700" src="https://cdn.discordapp.com/attachments/786276901278056458/876037563222204416/unknown.png">
 </div>
