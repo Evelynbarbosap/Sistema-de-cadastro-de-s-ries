@@ -12,20 +12,20 @@
     <div class="row">
         <table class="table table-dark">
             <thead>
-            <tr>
-                <th> <h2>Listagem</h2> </th>
-            </tr>
-            <tr>
-                <th>Título</th>
-                <th>Avaliação</th>
-                <th>Ações</th>
-            </tr>
+                <tr>
+                    <th> <h2>Listagem</h2> </th>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <th>Avaliação</th>
+                    <th>Ações</th>
+                </tr>
             </thead>
             <tbody>
             @foreach($series as $serie)
                 <tr>
                     <td>{{ $serie->title }}</td>
-                    <td>{{ $serie->assessment_id }}</td>
+                    <td>{{ $serie->assessment->assessment }}</td>
                     <td>
                         <a href="{{route('serie.edit', $serie->id)}}" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Editar"><i class="fas fa-edit"></i></a>
                         <form method="post" id="formdelete" action="{{route('serie.delete', $serie->id)}}" enctype="multipart/form-data">
