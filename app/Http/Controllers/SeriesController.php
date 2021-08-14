@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Assessments;
 use App\Serie;
 use Illuminate\Http\Request;
 
@@ -10,45 +11,58 @@ class SeriesController extends Controller {
 
     public function index()
     {
-        $series = Serie::query()
-            ->orderBy('title')
-            ->paginate($this->totalPage);
+        $series = Serie::query()->orderByDesc('title')->paginate($this->totalPage);
 
         return view('series.index', compact(['series']));
     }
 
     public function create()
     {
-        return view('series.create');
+        $assessments = Assessments::query()->get();
+
+        return view('series.create', compact(['assessments']));
     }
 
-    public function store( Request $request)
+    public function store(Request $request)
     {
-        $nameFile = null;
+        $request->validate([
+            'title' => 'required|string',
+            'assessment' => 'required',
+        ]);
 
-        $serie = new Serie();
-        $serie->title = $request->title;
-
-        if ($request->hasFile('image') && $request->file('image')->isValid()) {
-            $name = uniqid(date('HisYmd'));
-
-            $extension = $request->image->extension();
-
-            $nameFile = "{$name}.{$extension}";
-
-            $serie->url = $request->image->storeAs('series', $nameFile);
-            if (!$serie->url) {
-                self::notification('error', 'This is for error.');
-
-                return redirect()
-                    ->back()
-                    ->with('error', 'Falha ao fazer upload')
-                    ->withInput();
-            }
+        $serieExists = Serie::query()->where('title', $request->title)->first();
+        if (!$serieExists) {
+            $serie = new Serie();
+            $serie->title = $request->title;
+            $serie->assessment_id = $request->assessment;
+            $serie->save();
         }
 
-        $serie->save();
         self::notification('success', 'Item created successfully.');
+
+        return redirect()->route('series');
+    }
+
+    public function edit(Serie $serie)
+    {
+        $assessments = Assessments::query()->get();
+
+        return view('series.edit', compact(['serie', 'assessments']));
+    }
+
+    public function update(Request $request, Serie $serie)
+    {
+        $request->validate([
+            'title' => 'required|string',
+            'assessment' => 'required',
+        ]);
+
+        $serieExists = Serie::query()->where('title', $request->title)->first();
+        if ($serieExists) {
+            $serie->title = $request->title;
+            $serie->assessment_id = $request->assessment;
+            $serie->update();
+        }
 
         return redirect()->route('series');
     }
@@ -57,7 +71,7 @@ class SeriesController extends Controller {
     {
         session()->put($key,$value);
 
-        return view('series.notificationCheck');
+        return view('notification');
     }
 
     public function destroy(Request $request)

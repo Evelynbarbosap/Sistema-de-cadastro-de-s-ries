@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/serie', 'SeriesController@index')->name('series');
-Route::get('/serie/create', 'SeriesController@create')->name('serie.create');
-Route::post('/serie/create', 'SeriesController@store');
-Route::delete('/serie/delete/{id}', 'SeriesController@destroy')->name('serie.delete');
+Route::get('/series/list', [\App\Http\Controllers\SeriesController::class, 'index'])->name('series');
+Route::get('/serie/create', [\App\Http\Controllers\SeriesController::class, 'create'])->name('serie.create');
+Route::post('/serie/create', [\App\Http\Controllers\SeriesController::class, 'store']);
+Route::get('/serie/edit/{serie}', [\App\Http\Controllers\SeriesController::class, 'edit'])->name('serie.edit');
+Route::post('/serie/edit/{serie}', [\App\Http\Controllers\SeriesController::class, 'update'])->name('serie.update');
+Route::delete('/serie/delete/{id}', [\App\Http\Controllers\SeriesController::class, 'destroy'])->name('serie.delete');
+
